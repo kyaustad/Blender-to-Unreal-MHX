@@ -1,0 +1,23 @@
+schema_version = "1.0.0"
+
+id = "unreal_mhx"
+version = "1.0.0"
+name = "Unreal MHX"
+tagline = "Export Diffeomorphic MHX characters as UE5 Mannequin skeletons"
+maintainer = "Kyle Austad"
+type = "add-on"
+tags = ["Import-Export", "Animation", "Rigging"]
+blender_version_min = "4.4.0"
+license = [
+  "SPDX:GPL-2.0-or-later",
+]
+
+[permissions]
+files = "Write FBX and JSON files to the chosen export folder"
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  ".git*",
+  "/tests/",
+]
